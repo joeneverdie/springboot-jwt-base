@@ -1,5 +1,6 @@
-package io.joeneverdie.springsecurityconfig;
+package io.joeneverdie.springsecurityconfig.service;
 
+import io.joeneverdie.springsecurityconfig.model.MyUserDetails;
 import io.joeneverdie.springsecurityconfig.model.User;
 import io.joeneverdie.springsecurityconfig.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package io.joeneverdie.springsecurityconfig;
+package io.joeneverdie.springsecurityconfig.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
