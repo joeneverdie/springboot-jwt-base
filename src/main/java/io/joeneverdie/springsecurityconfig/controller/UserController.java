@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class LoginController {
+public class UserController {
 
     @Autowired
     MyUserDetailsService myUserDetailsService;
@@ -31,7 +31,7 @@ public class LoginController {
     }
 
     @GetMapping("/getAll")
-    public List<User> getAll(@RequestParam("active") boolean active) {
-        return myUserDetailsService.getAllUserByActive(active);
+    public List<User> getAll() {
+        return myUserDetailsService.getAllUserByActive();
     }
 }

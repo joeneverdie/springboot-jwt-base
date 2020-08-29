@@ -1,4 +1,4 @@
-package io.joeneverdie.springsecurityconfig.model;
+package io.joeneverdie.springsecurityconfig.service;
 
 import io.joeneverdie.springsecurityconfig.model.User;
 import org.springframework.security.authentication.jaas.AuthorityGranter;

@@ -1,6 +1,5 @@
 package io.joeneverdie.springsecurityconfig.service;
 
-import io.joeneverdie.springsecurityconfig.model.MyUserDetails;
 import io.joeneverdie.springsecurityconfig.model.User;
 import io.joeneverdie.springsecurityconfig.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,7 @@ public class MyUserDetailsService implements UserDetailsService {
         return user.map(MyUserDetails::new).get();
     }
 
-    public List<User> getAllUserByActive(boolean active) {
-        return userRepository.getAllByActive(active);
+    public List<User> getAllUserByActive() {
+        return userRepository.getAllByActive();
     }
 }
